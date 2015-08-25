@@ -1,0 +1,5 @@
+- name: put bash_profile
+  copy: dest=~/.bash_profile src=bash_profile
+
+- name: put vimrc
+  copy: dest=~/.vimrc src=vimrc

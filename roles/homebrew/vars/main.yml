@@ -1,0 +1,16 @@
+homebrew_packages:
+      - readline
+      - openssl
+      - { name: openssl, state: linked, install_options: force }
+      - ansible
+      - git
+      - tig
+      - bash_completion
+      - vim
+      - python
+      - nkf
+      - pyenv-virtualenv
+      - direnv
+      - android-sdk
+      - mongodb
+      - redis

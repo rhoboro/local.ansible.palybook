@@ -1,0 +1,14 @@
+homebrew_cask_packages:
+  - google-chrome
+  - dropbox
+  - virtualbox
+  - vagrant
+  - sublime-text
+  - macports
+  - eclipse-ide
+  - android-studio
+  - bettertouchtool
+  - java
+  - qlmarkdown
+  - wireshark
+  - dockertoolbox
