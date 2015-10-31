@@ -1,5 +1,8 @@
 - name: put bash_profile
   copy: dest=~/.bash_profile src=bash_profile
 
+- name: put zshrc 
+  copy: dest=~/.zshrc src=zshrc
+
 - name: put vimrc
   copy: dest=~/.vimrc src=vimrc
