@@ -18,6 +18,7 @@ export ANDROID_SDK=/usr/local/Cellar/android-sdk/24.1.2
 export PYENV_ROOT="${HOME}/.pyenv"
 export PATH=${ANDROID_HOME}/bin:${ANDROID_HOME}/tools:${PYENV_ROOT}/bin:$PATH
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 eval "$(direnv hook bash)"
 
@@ -65,6 +66,11 @@ RPROMPT=$'$(vcs_info_wrapper)'
 export GOPATH=~/go
 export PATH=$PATH:~/go/bin
 
+# Go completion
+if [ -f $GOROOT/misc/zsh/go ]; then
+    source $GOROOT/misc/zsh/go
+fi
+
 bindkey -r '^B' # Ctrl-o
 
 # ruby
@@ -74,3 +80,10 @@ fpath=(/path/to/homebrew/share/zsh-completions $fpath)
 autoload -U compinit
 compinit -u
 
+# aws autocomplete
+source /usr/local/bin/aws_zsh_completer.sh
+
+# ctrl + 矢印キー
+bindkey -e
+bindkey "[C" forward-word
+bindkey "[D" backward-word
