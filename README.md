@@ -23,4 +23,5 @@ JAVA_HOME
 ANDROID_SDK
 ANDROID_HOME
 ```
+# vim.zipを~/.vim に解凍
 
